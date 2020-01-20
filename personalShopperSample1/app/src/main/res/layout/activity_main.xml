@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.symbol.personalshoppersample1.MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="10dp">
+
+        <TableLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+            <CheckBox
+                android:id="@+id/ChecBoxfastcharge"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Fast Charge" />
+
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <CheckBox
+                    android:id="@+id/checkBox1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Smooth Effect" />
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:padding="5dp"
+                android:stretchColumns="0,1">
+
+                <Button
+                    android:id="@+id/CradleInfoButton1"
+                    android:text="Cradle Info"
+                    android:layout_weight="1"
+                    android:layout_column="0"/>
+
+                <Button
+                    android:id="@+id/Diagnosticdata"
+                    android:text="Diagnostic Info"
+                    android:layout_weight="1"
+                    android:layout_column="1"/>
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:padding="5dp"
+                android:stretchColumns="0,1">
+
+                <Button
+                    android:id="@+id/UnlockButton1"
+                    android:text="Cradle Unlock"
+                    android:layout_weight="1"
+                    android:layout_column="0"/>
+
+                <Button
+                    android:id="@+id/FlashLEDButton1"
+                    android:layout_weight="1"
+                    android:text="Cradle Flash LED&apos;s"
+                    android:layout_column="1"/>
+            </TableRow>
+
+        </TableLayout>
+
+        <TextView
+            android:id="@+id/PStextView"
+            android:layout_width="match_parent"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"/>
+
+    </LinearLayout>
+
+
+</android.support.constraint.ConstraintLayout>
